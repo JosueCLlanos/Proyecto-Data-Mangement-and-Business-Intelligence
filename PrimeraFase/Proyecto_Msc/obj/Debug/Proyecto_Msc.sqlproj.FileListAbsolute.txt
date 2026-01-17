@@ -1,0 +1,6 @@
+C:\Users\josuecl\source\repos\Proyecto_Msc\bin\Debug\Proyecto_Msc.dacpac
+C:\Users\josuecl\source\repos\Proyecto_Msc\bin\Debug\Proyecto_Msc.dll
+C:\Users\josuecl\source\repos\Proyecto_Msc\bin\Debug\Proyecto_Msc.pdb
+C:\Users\josuecl\source\repos\Proyecto_Msc\obj\Debug\Proyecto_Msc.sqlproj.AssemblyReference.cache
+C:\Users\josuecl\source\repos\Proyecto_Msc\obj\Debug\Proyecto_Msc.dll
+C:\Users\josuecl\source\repos\Proyecto_Msc\obj\Debug\Proyecto_Msc.pdb
