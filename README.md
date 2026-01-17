@@ -6,4 +6,4 @@ Integrantes:
 - Cristhian Labrandero Perez
 - Josue Choque Llanos
 - Manuel Joaquin Saavedra Severiche
-- Josue Choque LLanos
+- Julieta Flores
