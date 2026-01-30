@@ -1,40 +1,28 @@
-﻿CREATE PROCEDURE [dbo].[GetProductChangesByRowVersion]
+CREATE PROCEDURE [dbo].[GetProductChangesByRowVersion]
 (
    @startRow BIGINT 
    ,@endRow  BIGINT 
 )
 AS
 BEGIN
-
-  SELECT e.[EmployeeID]
-      ,e.[LastName]
-      ,e.[FirstName]
-      ,e.[Title]
-      ,e.[TitleOfCourtesy]
-      ,e.[BirthDate]
-      ,e.[HireDate]
-      ,e.[Address]
-      ,e.[City]
-      ,e.[Region]
-      ,e.[PostalCode]
-      ,e.[Country]
-      ,e.[HomePhone]
-      ,e.[Extension]
-      ,e.[Photo]
-      ,e.[Notes]
-      ,e.[ReportsTo]
-      ,e.[PhotoPath]
-    ,t.[TerritoryDescription]
-    ,r.[RegionDescription]
+  SELECT p.[ProductID]
+      ,p.[ProductName]
+      ,s.[CompanyName]
+      ,c.[CategoryName]
+      ,p.[QuantityPerUnit]
+      ,p.[UnitPrice]
+      ,p.[UnitsInStock]
+      ,p.[UnitsOnOrder]
+      ,p.[ReorderLevel]
+      ,p.[Discontinued]
   FROM 
-  [dbo].[Employees] e
-  INNER JOIN [dbo].[EmployeeTerritories] et ON e.EmployeeID=et.EmployeeID
-  INNER JOIN [dbo].[Territories] t ON et.TerritoryID=t.TerritoryID
-  INNER JOIN [dbo].[Region] r ON t.RegionID=r.RegionID
+	[dbo].[Products] p
+	INNER JOIN [dbo].[Categories] c ON p.CategoryID=c.CategoryID
+	INNER JOIN [dbo].[Suppliers] s ON p.SupplierID=s.SupplierID
   WHERE 
-  (e.[rowversion] > CONVERT(ROWVERSION,@startRow) AND e.[rowversion] <= CONVERT(ROWVERSION,@endRow))
-  OR (et.[rowversion] > CONVERT(ROWVERSION,@startRow) AND et.[rowversion] <= CONVERT(ROWVERSION,@endRow))
-  OR (t.[rowversion] > CONVERT(ROWVERSION,@startRow) AND t.[rowversion] <= CONVERT(ROWVERSION,@endRow))
-  OR (r.[rowversion] > CONVERT(ROWVERSION,@startRow) AND r.[rowversion] <= CONVERT(ROWVERSION,@endRow))
+	(p.[rowversion] > CONVERT(ROWVERSION,@startRow) AND p.[rowversion] <= CONVERT(ROWVERSION,@endRow))
+	OR (c.[rowversion] > CONVERT(ROWVERSION,@startRow)	AND c.[rowversion] <= CONVERT(ROWVERSION,@endRow))
+	OR (s.[rowversion] > CONVERT(ROWVERSION,@startRow) AND s.[rowversion] <= CONVERT(ROWVERSION,@endRow))
+
 END
 GO
