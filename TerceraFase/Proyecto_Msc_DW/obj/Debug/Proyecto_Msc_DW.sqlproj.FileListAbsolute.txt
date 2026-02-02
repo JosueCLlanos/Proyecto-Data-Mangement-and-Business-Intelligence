@@ -1,0 +1,16 @@
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.dacpac
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.sqlproj.AssemblyReference.cache
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.dll
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.pdb
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.dll
+C:\Users\josuecl\source\repos\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.pdb
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.dacpac
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.dll
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\bin\Debug\Proyecto_Msc_DW.pdb
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.sqlproj.AssemblyReference.cache
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\Model.xml
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\refactor.xml
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\postdeploy.sql
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\predeploy.sql
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.dll
+C:\Users\USUARIO\Downloads\Proyecto\Proyecto_Msc_DW\obj\Debug\Proyecto_Msc_DW.pdb

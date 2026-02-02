@@ -1,0 +1,28 @@
+﻿** Aspectos destacados
+     Tablas que se volverán a crear con los datos migrados
+       Ninguno
+     Índices clúster que se van a quitar
+       Ninguno
+     Índices clúster que se van a crear
+       Ninguno
+     Posibles incidencias de datos
+       Ninguno
+
+** Acciones del usuario
+     Crear
+       [dbo].[CustOrderHist] (Procedimiento)
+       [dbo].[CustOrdersDetail] (Procedimiento)
+       [dbo].[CustOrdersOrders] (Procedimiento)
+       [dbo].[Employee Sales by Country] (Procedimiento)
+       [dbo].[GetCustomerChangesByRowVersion] (Procedimiento)
+       [dbo].[GetDatabaseRowVersion] (Procedimiento)
+       [dbo].[GetEmployeeChangesByRowVersion] (Procedimiento)
+       [dbo].[GetProductChangesByRowVersion] (Procedimiento)
+       [dbo].[Sales by Year] (Procedimiento)
+       [dbo].[SalesByCategory] (Procedimiento)
+       [dbo].[Ten Most Expensive Products] (Procedimiento)
+
+** Acciones de compatibilidad
+
+Las bases de datos del proyecto y de destino tienen una configuración de intercalación diferente. Se pueden producir errores de implementación.
+
