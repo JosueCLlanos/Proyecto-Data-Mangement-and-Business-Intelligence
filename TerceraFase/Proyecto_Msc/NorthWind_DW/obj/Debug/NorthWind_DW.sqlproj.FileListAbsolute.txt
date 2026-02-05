@@ -1,0 +1,10 @@
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\bin\Debug\NorthWind_DW.dacpac
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\obj\Debug\NorthWind_DW.sqlproj.AssemblyReference.cache
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\obj\Debug\NorthWind_DW.dll
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\obj\Debug\NorthWind_DW.pdb
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\bin\Debug\NorthWind_DW.dll
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_MSC\NorthWind_DW\bin\Debug\NorthWind_DW.pdb
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_Msc\NorthWind_DW\obj\Debug\Model.xml
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_Msc\NorthWind_DW\obj\Debug\refactor.xml
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_Msc\NorthWind_DW\obj\Debug\postdeploy.sql
+C:\Users\ariel.coca\Documents\GITHUB\SQL\CRISTHIAN\Proyecto-Data-Mangement-and-Business-Intelligence\CuartaFase\Proyecto_Msc\NorthWind_DW\obj\Debug\predeploy.sql

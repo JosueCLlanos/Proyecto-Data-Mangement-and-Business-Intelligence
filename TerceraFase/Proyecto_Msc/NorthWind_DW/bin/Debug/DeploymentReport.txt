@@ -1,0 +1,42 @@
+﻿** Aspectos destacados
+     Tablas que se volverán a crear con los datos migrados
+       Ninguno
+     Índices clúster que se van a quitar
+       Ninguno
+     Índices clúster que se van a crear
+       Ninguno
+     Posibles incidencias de datos
+       Ninguno
+
+** Acciones del usuario
+     Crear
+       [staging] (Esquema)
+       [staging].[Shippers] (Tabla)
+       [staging].[Products] (Tabla)
+       [staging].[FactOrders] (Tabla)
+       [staging].[Employees] (Tabla)
+       [staging].[Date] (Tabla)
+       [staging].[Customers] (Tabla)
+       [dbo].[DimCustomers] (Tabla)
+       [dbo].[DimDate] (Tabla)
+       [dbo].[DimEmployees] (Tabla)
+       [dbo].[DimOrdersDetail] (Tabla)
+       [dbo].[DimProducts] (Tabla)
+       [dbo].[DimShippers] (Tabla)
+       [dbo].[FactOrders] (Tabla)
+       [dbo].[PackageConfig] (Tabla)
+       [dbo].[FK_DimDate_OrderDate] (Clave externa)
+       [dbo].[FK_DimDate_RequiredDate] (Clave externa)
+       [dbo].[FK_DimDate_ShippedDate] (Clave externa)
+       [dbo].[FK_FactOrders_DimCustomers] (Clave externa)
+       [dbo].[FK_FactOrders_DimEmployees] (Clave externa)
+       [dbo].[FK_FactOrders_DimProducts] (Clave externa)
+       [dbo].[DW_MergeDimCustomers] (Procedimiento)
+       [dbo].[DW_MergeDimEmployees] (Procedimiento)
+       [dbo].[DW_MergeDimProducts] (Procedimiento)
+       [dbo].[DW_MergeDimShippers] (Procedimiento)
+       [dbo].[DW_MergeFactOrders] (Procedimiento)
+       [dbo].[GetLastPackageRowVersion] (Procedimiento)
+       [dbo].[UpdateLastPackageRowVersion] (Procedimiento)
+
+** Acciones de compatibilidad
