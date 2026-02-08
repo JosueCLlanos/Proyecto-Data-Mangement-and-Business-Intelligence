@@ -1,0 +1,8 @@
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\bin\Model.asdatabase
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\bin\Model.deploymenttargets
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\bin\Model.deploymentoptions
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\obj\Development\NorthWindOLAP.smproj.AssemblyReference.cache
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\obj\Development\NorthWindOLAP.smproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\obj\Development\Model.asdatabase
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\obj\Development\Model.deploymentoptions
+C:\Users\USUARIO\Downloads\CuartaFase\CuartaFase\Proyecto_MSC\NorthWindOLAP\NorthWindOLAP\obj\Development\Model.deploymenttargets
