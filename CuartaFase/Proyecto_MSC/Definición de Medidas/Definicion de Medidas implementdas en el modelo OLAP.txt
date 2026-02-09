@@ -1,0 +1,94 @@
+1.- Nro de Ordenes de Compra Generadas
+
+cantidad ordenes:= DISTINCTCOUNT(FactOrders[OrderID])
+
+2.- Monto Total de Ventas Generadas
+
+Ventas Totales $:= SUM(FactOrders[Precio Total])
+
+3.- Monto Neto Total de las Ventas Realizadas
+
+Ventas Netas $:= SUM(FactOrders[Precio real])
+
+4.- Cantidad de Ordenes de Compra generadas
+
+Total Cantidad:= sum(FactOrders[Quantity])
+
+5.- Cantidad de Ordenes atendidas a tiempo o en la fecha limite 
+
+Pedidos a Tiempo:= 
+CALCULATE(
+    DISTINCTCOUNT(FactOrders[OrderID]),
+    FactOrders[ShippedDateKey] <= FactOrders[RequiredDateKey],
+    NOT(ISBLANK(FactOrders[ShippedDateKey])) -- Excluimos pedidos no enviados
+)
+
+6.- CAntidad de ordenes de compra cuya Cantidad es Menor a 100 Unidades
+
+Ventas Pequeñas:=
+CALCULATE(
+    DISTINCTCOUNT(FactOrders[OrderID]),
+    FILTER(
+        VALUES(FactOrders[OrderID]),
+        [Total Cantidad] < 100
+    )
+)
+
+
+7.- Cantidad de Ordenes de Compra cuya Cantidad es mayor a 100 Unidades 
+
+Ventas Grandes:=
+CALCULATE(
+    DISTINCTCOUNT(FactOrders[OrderID]),
+    FILTER(
+        VALUES(FactOrders[OrderID]),
+        [Total Cantidad] >= 100
+    )
+)
+
+
+8.- Ventas generadas en el Año anterior, permite compara los rendimientos de Periodos Anteriores 
+
+Ventas Año Anterior:=
+CALCULATE (
+   [Ventas Netas $],
+    DimDate[CalendarYear] = MAX ( DimDate[CalendarYear] ) - 1
+)
+
+
+9.- Ventas Acumuladas del  Año a la fecha Actual 
+
+Ventas Año Actual:=
+CALCULATE (
+   [Ventas Netas $],
+    DimDate[CalendarYear] = MAX ( DimDate[CalendarYear] ) 
+)
+
+
+10.- Crecimiento de Ventas Comparadas con la Gestion Anterior
+Calcula la variación porcentual entre el año actual y el anterior.
+
+Crecimiento YoY %:= ([Ventas Año Actual]-[Ventas Año Anterior])/[Ventas Año Anterior]
+
+
+11.- Porcentaje de cumplimiento de Entregas de las ordenes de compra en relacion a los pedidos entregados a tiempo
+
+% Cumplimiento Entregas:= 
+DIVIDE(
+    [Pedidos a Tiempo], 
+    DISTINCTCOUNT(FactOrders[OrderID]), 
+    0
+)
+
+
+12.- Semaforo que indicara el EStado de Complumiento de las entregas en funcion a los valores establecidos para su cumplimiento efectivo
+
+Estado Cumplimiento:= 
+VAR Ratio = [% Cumplimiento Entregas]
+RETURN
+    SWITCH( TRUE(),
+        Ratio >= 0.95, 1,  -- Verde: Mayor al 95%
+        Ratio >= 0.85, 0,  -- Amarillo: Entre 85% y 95%
+        -1                 -- Rojo: Menor al 85%
+    )
+
